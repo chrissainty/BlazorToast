@@ -1,5 +1,5 @@
 using BlazorToastNotifications.Services;
-using Microsoft.AspNetCore.Blazor.Builder;
+using Microsoft.AspNetCore.Components.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BlazorToastNotifications
@@ -11,7 +11,7 @@ namespace BlazorToastNotifications
             services.AddSingleton<ToastService>();
         }
 
-        public void Configure(IBlazorApplicationBuilder app)
+        public void Configure(IComponentsApplicationBuilder app)
         {
             app.AddComponent<App>("app");
         }

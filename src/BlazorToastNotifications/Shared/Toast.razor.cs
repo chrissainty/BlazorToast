@@ -1,10 +1,10 @@
 ﻿using BlazorToastNotifications.Services;
-using Microsoft.AspNetCore.Blazor.Components;
+using Microsoft.AspNetCore.Components;
 using System;
 
 namespace BlazorToastNotifications.Shared
 {
-    public class ToastBase : BlazorComponent, IDisposable
+    public class ToastBase : ComponentBase, IDisposable
     {
         [Inject] ToastService ToastService { get; set; }
 
