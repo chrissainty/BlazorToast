@@ -1,10 +1,9 @@
-﻿namespace BlazorToastNotifications.Services
+﻿namespace BlazorToastNotifications.Services;
+
+public enum ToastLevel
 {
-    public enum ToastLevel
-    {
-        Info,
-        Success,
-        Warning,
-        Error
-    }
+    Info,
+    Success,
+    Warning,
+    Error
 }
